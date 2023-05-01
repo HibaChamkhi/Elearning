@@ -1,6 +1,8 @@
 /* Start Variables */
 :root {
   --main-color:  #2378FF;
+  --second-color:#F77E53;
+  --third-color:#606176;
   --section-background: #E8F1FF;
   --main-duration: 0.5s;
   --section-padding: 100px;
@@ -18,13 +20,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 ul {
   list-style: none;
 }
 a{
   text-decoration: none;
+}
+h1{
+  font-weight: 600;
 }
 .container {
   padding-left: 15px;
@@ -98,7 +103,7 @@ header nav ul {
 }
 header nav ul li a {
   font-size: 15px;
-  line-height: 18px;
+  font-weight: 400;
       display: block;
       padding: 23px;
       text-decoration: none;
@@ -107,7 +112,7 @@ header nav ul li a {
   position: relative;
 }
 header nav ul li  a.active {
- font-weight: bold;
+ font-weight: 600;
 }
 header  .header-button .sign-in{
   width: 125px;
@@ -131,7 +136,7 @@ header  .header-button .sign-in{
 
 .landing .container {
   padding-top: 130px;
-  min-height: calc(100vh - 72px);
+
   display: flex;
   align-items: center;
   padding-bottom: 170px;
@@ -164,17 +169,18 @@ header  .header-button .sign-in{
 @media (max-width: 991px) {
   .landing .text p {
     margin: 10px auto;
+    color: var(--third-color);
   }
 }
 @media (max-width: 767px) {
   .landing .text p {
     font-size: 18px;
+    color: var(--third-color);
   }
 }
 .landing .image img {
   position: relative;
   width: 600px;
-  animation: up-and-down 5s linear infinite;
 }
 @media (max-width: 991px) {
   .landing .image {
@@ -186,12 +192,9 @@ header  .header-button .sign-in{
 .landing  .header-landing .get-started{
   width: 200px;
   height: 62px;
- background: #F77E53;
+ background: var(--second-color);
   border-radius: 12px;
-  font-family: 'Inter';
-  font-weight: 600;
   font-size: 18px;
-  line-height: 19px;
     border: none;
     color: white;
     text-align: center;
@@ -218,13 +221,10 @@ font-size: 70px;
 font-weight: bold;
 }
 
-.partners p {
-  font-family: 'Inter';
-
-}
 @media (min-width: 540px) {
   .partners p{
     max-width: 180px;
+    color: var(--third-color);
     line-height: 1.6;
   }
   }
@@ -318,18 +318,15 @@ margin-bottom: 100px;
 
 .courses  .header-courses{padding-top: 20px;padding-bottom: 20px;}
 .courses .header-courses .contact-link {
-  font-family: 'Inter';
-  font-weight: 600;
   font-size: 18px;
-  line-height: 19px;
     text-decoration: none;
     display: inline-block;
     text-align: center;
     width: 180px;
     padding: 20px;
-    border: 1px solid #2076FF;
+    border: 1px solid var(--main-color);
     border-radius: 12px;
-    color:  #2076FF;
+    color:  var(--main-color);
 }
 .courses .all-courses {
   display: grid;
@@ -367,12 +364,13 @@ margin-bottom: 100px;
   margin-bottom: 40px ;
   margin-top: 20px;
   line-height: 1.6;
+  font-weight: 600;
 }
 .courses .button-courses {
   text-align: center;
   width: 80%;
   padding: 15px;
-  border: 1px solid #2076FF;
+  border: 1px solid var(--main-color);
   border-radius: 12px;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -382,7 +380,7 @@ margin-bottom: 100px;
   gap: 10px;
 }
 .courses .button-courses a {
-  color: #2076FF;
+  color: var(--main-color);
 }
 
 
@@ -392,7 +390,6 @@ margin-bottom: 100px;
 
 .transform .container {
   padding-top: 100px;
-  min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
   padding-bottom: 120px;
@@ -417,9 +414,10 @@ margin-bottom: 100px;
 .transform .text p:not(:last-child) {
   font-size: 23px;
   line-height: 1.7;
-margin: 35px 0;
+  max-width: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #666;
-  max-width: 500px;
 }
 @media (max-width: 991px) {
   .transform .text p {
@@ -434,7 +432,6 @@ margin: 35px 0;
 .transform .image img {
   position: relative;
   width: 600px;
-  animation: up-and-down 5s linear infinite;
 }
 @media (max-width: 991px) {
   .transform .image {
@@ -446,12 +443,9 @@ margin: 35px 0;
 .transform  .header-transform .get-started{
   width: 200px;
   height: 62px;
- background: #F77E53;
+ background: var(--second-color);
   border-radius: 12px;
-  font-family: 'Inter';
-  font-weight: 600;
   font-size: 18px;
-  line-height: 19px;
     border: none;
     color: white;
     text-align: center;
@@ -503,6 +497,7 @@ color: var(--main-color);
   white-space: pre-wrap;
 }
 .posts p{
+  color: var(--third-color);
   margin-bottom: 30px;
   width:400px;
   white-space: pre-wrap;
@@ -533,18 +528,16 @@ width: 500px;
 
 .pricing  .header-pricing{padding-top: 20px;padding-bottom: 20px;}
 .pricing .contact-link {
-  font-family: 'Inter';
-  font-weight: 600;
+
   font-size: 18px;
-  line-height: 19px;
     text-decoration: none;
     display: inline-block;
     text-align: center;
     width: 160px;
     padding: 20px;
-    border: 1px solid #2076FF;
+    border: 1px solid var(--main-color);
     border-radius: 12px;
-    color:  #2076FF;
+    color:  var(--main-color);
 }
 .pricing .plans {
   display: grid;
@@ -576,13 +569,13 @@ width: 500px;
 }
 
 .pricing .plans  .regular .head {
-  background-color: #F77E53;
+  background-color:  var(--second-color);
 }
 .pricing .plans  .medium .head {
   background: #F6C07A
 }
 .pricing .plans  .premium .head {
-  background: #2076FF;
+  background: var(--main-color);
 }
 
 .pricing .plans .plan .head h3 {
@@ -604,6 +597,7 @@ width: 500px;
   font-weight: normal;
 }
 .pricing .plans .plan ul li {
+  color: var(--third-color);
   padding: 20px 45px;
   position: relative;
   text-align: start;
@@ -617,13 +611,13 @@ width: 500px;
   display: inline-block;
 }
 .pricing .plans .regular  ul li::before {
-  background-color: #F77E53;
+  background-color:  var(--second-color);
 }
 .pricing .plans .medium  ul li::before {
   background-color: #F6C07A;
 }
 .pricing .plans .premium  ul li::before {
-  background-color: #2076FF;
+  background-color: var(--main-color);
 }
 
 .pricing .plans .plan .foot a {
@@ -636,12 +630,12 @@ width: 500px;
   
 }
 .pricing .plans .regular .foot a {
-  border: 1px solid #F77E53;
-  color: #F77E53;
+  border: 1px solid  var(--second-color);
+  color:  var(--second-color);
 }
 .pricing .plans .premium .foot a {
-  border: 1px solid #2378FF;
-  color: #2378FF;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
 }
 .pricing .plans .medium .foot a {
   border: 1px solid #F6C07A;
@@ -669,19 +663,19 @@ width: 500px;
 .footer .copyright {
   padding: 25px 0;
   margin: 50px 0 0;
-  border-top: 1px solid #606176;
-  color: #606176
+  border-top: 1px solid var(--third-color);
+  color: var(--third-color)
 }
 .footer a {
-  font-family: 'Inter';
 font-size: 16px;
 line-height: 3;
-color: black;
+color: var(--third-color);
 }
 .footer .logo p {
-  font-family: 'Inter';
+color: var(--third-color);
   font-size: 18px;
-  line-height: 26px;
+  font-weight: 400;
+ 
 }
 .footer .get-our-app img{
   padding-top: 10px
