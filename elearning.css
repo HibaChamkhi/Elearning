@@ -298,6 +298,34 @@ margin-bottom: 100px;
   color: #777;
   max-width: 185px;
 }
+.img-container{
+  position: relative;
+}
+.online-services-box{
+  width: 232px;
+  height: 168px;
+  background: white;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+border-radius: 16px;
+  position: absolute;
+  left: 23%;
+  top: 85%;
+  text-align: center;
+    padding: 20px;
+}
+.online-services-box .circle{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-radius: 50%;
+  background: #FAE9D9;
+  top: 82%;
+  right: -12%;
+}
+.online-services-box p{
+  color: #606176;
+  margin: 10px 0;
+}
 /* End Services */
 
 /* Start Courses */
@@ -429,9 +457,20 @@ margin-bottom: 100px;
     font-size: 18px;
   }
 }
-.transform .image img {
-  position: relative;
-  width: 600px;
+.transform .image .vedio {
+  width: 530px;
+  height: 360px;
+  position: absolute;
+  top: 13%;
+  left: -9%;
+}
+.transform .image {
+margin-left: 50px;
+position: relative;
+width: 545px;
+height: 565px;
+background: #F6F5FA;
+border-radius: 18px;
 }
 @media (max-width: 991px) {
   .transform .image {
@@ -457,6 +496,26 @@ text-decoration: underline;
 color: var(--main-color);
 }
 
+.transform  .img-video-box{
+  padding: 20px 35px;
+  width: 145px;
+  height: 115px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 25px -12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.transform .img-video-box img{
+  width: 80px;
+height: 45px;
+}
+.transform-boxs{
+  left: 8%;
+  top: 90%;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
 /* End Transform */
 
 
